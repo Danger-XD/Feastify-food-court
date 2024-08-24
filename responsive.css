@@ -1,0 +1,246 @@
+/* responsive design starts here:
+*/
+@media only screen and (width < 576px) {
+  .container {
+    max-width: 100%;
+    background-color: rgba(255, 0, 0, 0.192);
+    margin: 0px;
+  }
+  .navbar {
+    padding: 16px 0px;
+    height: max-content;
+    flex-direction: column;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .navbar ul li a {
+    margin: 10px 0px;
+    padding: 0px 18px;
+    font-size: 20px;
+  }
+  .search-box {
+    width: 80%;
+    height: 44px;
+    margin: 8px 0px 0px;
+  }
+  /* navbar ends here */
+  /* information starts here */
+  .information{
+    height: fit-content;
+    flex-direction: column;
+    margin: 16px 0px;
+}
+.information hr{
+    height: 1px;
+    width: 70%;
+}
+.info{
+    width: 100%;
+    padding: 18px 0px;
+}
+/* information ends here */
+/* products starts here */
+.product-box{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 22px;
+  padding: 0px 12px;
+}
+/* products ends here */
+/* service starts here */
+.service-box{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+  padding: 0px 12px;
+}
+/* service ends here */
+/* testimonials starts here */
+.testimonials-box{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  /* gap: 200px; */
+}
+.carousel{
+  height: 300px;
+}
+.left-arrow{
+  top: 25%;
+  left: 0%;
+}
+.right-arrow{
+  top: 75%;
+  right: 0%;
+}
+/* testimonials ends here */
+/* subscribe starts here */
+.subscription{
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: var(--background-color02);
+  margin: 20px 0px;
+
+}
+.subscribe-box{
+  width: 100%;
+  height: fit-content;
+}
+.food-img img{
+  width: 260px;
+  height: fit-content;
+}
+/* subscribe ends here */
+/* footer starts here */
+.footer{
+  grid-template-columns: repeat(1,1fr);
+  gap: 30px;
+  padding:2rem;
+}
+.contact-email{
+  width: 90%;
+}
+/* footer ends here */
+}
+
+@media only screen and (768px > width >= 576px) {
+  .container {
+    max-width: 520px;
+    background-color: rgba(0, 128, 0, 0.253);
+  }
+  /* navbar starts here */
+  .navbar {
+    padding: 16px 0px;
+    height: max-content;
+    flex-direction: column;
+  }
+  .logo img {
+    width: 114px;
+    height: 64px;
+  }
+  .navbar ul li a {
+    margin: 10px 0px;
+    padding: 0px 18px;
+    font-size: 20px;
+  }
+  .search-box {
+    width: 80%;
+    height: 44px;
+    margin: 8px 0px 0px;
+  }
+   /* navbar ends here */
+  /* information starts here */
+  .information{
+    width: 60%;
+    height: fit-content;
+    flex-direction: column;
+}
+.information hr{
+    height: 1px;
+    width: 70%;
+}
+.info{
+    width: 100%;
+    padding: 18px 0px;
+}
+/* information ends here */
+/* products starts here */
+.product-box{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 22px;
+  padding: 0px 22px;
+}
+/* products ends here */
+/* service starts here */
+.service-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+/* service ends here */
+/* testimonials starts here */
+.testimonials-box{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  /* gap: 200px; */
+}
+.carousel{
+  height: 300px;
+}
+/* testimonials ends here */
+/* subscribe starts here */
+.subscription{
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: var(--background-color02);
+}
+.subscribe-box{
+  width: 100%;
+  height: fit-content;
+}
+.food-img img{
+  width: 300px;
+  height: fit-content;
+}
+/* subscribe ends here */
+/* footer starts here */
+.footer{
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+}
+/* footer ends here */
+}
+
+@media only screen and (992px > width >= 768px) {
+  .container {
+    max-width: 720px;
+    background-color: yellow;
+  }
+  /* products starts here */
+.product-box{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 22px;
+  /* padding: 0px 12px; */
+}
+/* products ends here */
+  /* subscribe starts here */
+  .subscription{
+    padding: 1rem;
+    background-color: var(--background-color02);
+  }
+  .food-img img{
+    width: 300px;
+    height: fit-content;
+  }
+  /* subscribe ends here */
+  /* footer starts here */
+.footer{
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+}
+/* footer ends here */
+}
+@media only screen and (1200px > width >= 992px) {
+  .container {
+    max-width: 960px;
+    background-color: rgb(255, 0, 0);
+  }
+  /* subscribe starts here */
+  .subscription{
+    padding: 1.4rem;
+    background-color: var(--background-color02);
+  }
+  .food-img img{
+    width: 260px;
+    height: fit-content;
+  }
+  /* subscribe ends here */
+}
+@media only screen and (width >= 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* responsive design ends here */
