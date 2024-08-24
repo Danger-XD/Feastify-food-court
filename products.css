@@ -85,3 +85,44 @@
     color: var(--background-color03);
     cursor: pointer;
 }
+.product-btns{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+#seemore-btn{
+    padding: 26px 39px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color01);
+    color: var(--background-color03);
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#seemore-btn svg,#seeless-btn svg{
+    color: var(--background-color03);
+    width: 20px;
+}
+#seeless-btn{
+    padding: 26px 39px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color01);
+    color: var(--background-color03);
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+}
