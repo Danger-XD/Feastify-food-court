@@ -23,6 +23,7 @@ body {
   --background-color05: #B6B6B6;
   --background-color06: #F5DDC4;
   --background-color07: #FAFAFF;
+  --background-color08: red;
 }
 /* classes that will be used for all types of screen */
 .container {

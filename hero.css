@@ -1,65 +1,169 @@
-/* navbar stats here */
-.navbar {
+/* hero section starts here */
+.hero{
   width: 100%;
-  height: max-content;
+  height: fit-content;
+  margin: 22px auto;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 8px;
+  position: relative;
 }
-.logo img {
-  width: 94px;
-  height: 56px;
+.arrow-img{
+  position: absolute;
+  left: 320px;
+  z-index: 1;
 }
-.navbar ul {
+.left-hero{
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  margin-top: -40px;
+}
+.delivery-box{
+  width: 270px;
+  height: 64px;
+  background-color: var(--background-color06);
+  border-radius: 30px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0.5rem;
+  margin-bottom:40px;
 }
-.navbar ul li {
-  list-style: none;
-}
-.navbar ul li a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 0px 22px;
+.delivery-box h5{
   font-size: 18px;
   font-weight: 600;
-  color: var(--background-color02);
+  color: var(--background-color01);
+  padding-left: 1rem;
 }
-.search-box {
-  width: 25%;
-  height: 48px;
+.bike-icon{
+  width: 54px;
+  height: 54px;
   background-color: var(--background-color03);
-  box-shadow: 0px 0px 17px 0px #00000026;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 10px;
+  border-radius: 50%;
 }
-.search-icon {
-  width: 25px;
-  height: 26px;
+.hero-title,.hero-description{
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 40px;
 }
-.search-input {
-  width: 74%;
-  height: 70%;
-  border: none;
+.hero-title h1{
+  text-align: justify;
+  font-size: 66px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hero-title span{
+  color: var(--background-color01);
+}
+.hero-description p{
   font-size: 18px;
   font-weight: 500;
-  border-right: 1px solid #adadad;
+  text-align: justify;
+  line-height: 20px;
 }
-.search-input::placeholder{
-    color: var(--background-color02);
+.hero-btns{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.order-btn{
+  padding: 18px 36px;
+  background: linear-gradient(180deg, #EFAB68 0%, #F48E28 100%);
+  color: var(--background-color03);
+  font-size: 26px;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.heroProcess-btn{
+  margin-left: 20px;
+  width: 44%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heroProcess-btn button{
+  width: 66px;
+  height: 66px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px 0px #83A5FF40;
+  background-color: var(--background-color03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.heroProcess-btn button:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.heroProcess-btn button img{
+  width: 33px;
+  height: 33px;
+  padding-left: 4px;
+}
+.heroProcess-btn h4{
+  font-size: 24px;
+  font-weight: 700;
+}
+.right-hero{
+  width: 40%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+  /* fix it */
+  z-index: 15; 
+}
+.heroFood-card{
+  height: 240px;
+  background-color: var(--background-color03);
+  border-radius: 30px;
+  box-shadow: 0px 0px 31px 0px #0000000D;
+}
+.heroFood-img{
+  height: 55%;
+  width: 100%;
+  position: relative;
+}
+.heroFood-img img{
+  width: 100%;
+  position: absolute;
+  top: -50px;
+}
+.heroFood-card:last-child .heroFood-img img{
+  width: 100%;
+  position: absolute;
+  top: -10px;
+}
+.heroFood-title{
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heroFood-title h4{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.heroFood-title p{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.heroFood-title h5{
+  font-size: 16px;
   font-weight: 600;
-
 }
-.cart-link{
-    color: var(--background-color02);
+.heroFood-title h5 span{
+  color: var(--background-color08);
 }
-.cart-icon {
-  width: 28px;
-}
-/* navbar ends here */
-
-/* hero section starts here */
 /* hero section ends here */

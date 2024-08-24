@@ -81,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .contact-email button svg{
     color: var(--background-color03);

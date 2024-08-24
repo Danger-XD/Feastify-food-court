@@ -1,0 +1,62 @@
+/* navbar stats here */
+.navbar {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 8px;
+  }
+  .logo img {
+    width: 94px;
+    height: 56px;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar ul li {
+    list-style: none;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 22px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--background-color02);
+  }
+  .search-box {
+    width: 25%;
+    height: 48px;
+    background-color: var(--background-color03);
+    box-shadow: 0px 0px 17px 0px #00000026;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .search-icon {
+    width: 25px;
+    height: 26px;
+  }
+  .search-input {
+    width: 74%;
+    height: 70%;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-right: 1px solid #adadad;
+  }
+  .search-input::placeholder{
+      color: var(--background-color02);
+    font-weight: 600;
+  
+  }
+  .cart-link{
+      color: var(--background-color02);
+  }
+  .cart-icon {
+    width: 28px;
+  }
+  /* navbar ends here */

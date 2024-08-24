@@ -3,9 +3,9 @@
 @media only screen and (width < 576px) {
   .container {
     max-width: 100%;
-    background-color: rgba(255, 0, 0, 0.192);
     margin: 0px;
   }
+  /* navbar starts here */
   .navbar {
     padding: 16px 0px;
     height: max-content;
@@ -25,88 +25,175 @@
     margin: 8px 0px 0px;
   }
   /* navbar ends here */
+  /* hero starts here */
+  .hero {
+    margin: 22px 0px;
+    flex-direction: column;
+  }
+  .left-hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin-top: 0px;
+  }
+  .hero-title h1 {
+    text-align: center;
+    font-size: 36px;
+  }
+  .hero-btns {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .heroProcess-btn {
+    margin-left: 0px;
+    width: 245px;
+    margin-top: 22px;
+  }
+  .right-hero {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    padding: 0px 12px 12px;
+  }
+  .heroFood-card{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroFood-img{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroFood-img img{
+    width: 100%;
+    position: static;
+  }
+  .heroFood-card:last-child .heroFood-img img{
+    width: 100%;
+    position: static;
+  }
+  .heroFood-title{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow-img{
+    display: none;
+  }
+  /* hero ends here */
   /* information starts here */
-  .information{
+  .information {
     height: fit-content;
     flex-direction: column;
-    margin: 16px 0px;
-}
-.information hr{
+    margin: 16px auto;
+    width: 95%;
+  }
+  .information hr {
     height: 1px;
     width: 70%;
-}
-.info{
+  }
+  .info {
     width: 100%;
-    padding: 18px 0px;
+    padding: 30px 0px;
+  }
+  /* information ends here */
+  /* products starts here */
+  .product-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 22px;
+    padding: 0px 12px;
+  }
+  .food-name h4 {
+    font-size: 20px;
+  }
+  .food-review{
+    width: 15%;
+  }
+  /* products ends here */
+  /* service starts here */
+  .service-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    padding: 0px 12px;
+  }
+  /* service ends here */
+  /* testimonials starts here */
+  .testimonials-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 200px; */
+  }
+  .carousel {
+    height: 300px;
+  }
+  .left-arrow {
+    top: 25%;
+    left: 0%;
+  }
+  .right-arrow {
+    top: 75%;
+    right: 0%;
+  }
+  /* testimonials ends here */
+  /* subscribe starts here */
+  .subscription {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background-color: var(--background-color02);
+    margin: 20px auto;
+    width: 95%;
+  }
+  .subscribe-box {
+    width: 100%;
+    height: fit-content;
+  }
+  .input-box button {
+    width: 40%;
+    font-size: 14px;
+  }
+  .food-img img {
+    width: 260px;
+    height: fit-content;
+  }
+  /* subscribe ends here */
+  /* footer starts here */
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 2rem;
+    text-align: center;
+  }
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-email {
+    width: 230px;
+  }
+  /* footer ends here */
 }
-/* information ends here */
-/* products starts here */
-.product-box{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  gap: 22px;
-  padding: 0px 12px;
-}
-/* products ends here */
-/* service starts here */
-.service-box{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 8px;
-  padding: 0px 12px;
-}
-/* service ends here */
-/* testimonials starts here */
-.testimonials-box{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  /* gap: 200px; */
-}
-.carousel{
-  height: 300px;
-}
-.left-arrow{
-  top: 25%;
-  left: 0%;
-}
-.right-arrow{
-  top: 75%;
-  right: 0%;
-}
-/* testimonials ends here */
-/* subscribe starts here */
-.subscription{
-  flex-direction: column;
-  padding: 2rem 1rem;
-  background-color: var(--background-color02);
-  margin: 20px 0px;
-
-}
-.subscribe-box{
-  width: 100%;
-  height: fit-content;
-}
-.food-img img{
-  width: 260px;
-  height: fit-content;
-}
-/* subscribe ends here */
-/* footer starts here */
-.footer{
-  grid-template-columns: repeat(1,1fr);
-  gap: 30px;
-  padding:2rem;
-}
-.contact-email{
-  width: 90%;
-}
-/* footer ends here */
-}
-
 @media only screen and (768px > width >= 576px) {
   .container {
     max-width: 520px;
-    background-color: rgba(0, 128, 0, 0.253);
   }
   /* navbar starts here */
   .navbar {
@@ -128,111 +215,191 @@
     height: 44px;
     margin: 8px 0px 0px;
   }
-   /* navbar ends here */
+  /* navbar ends here */
+  /* hero starts here */
+  .hero {
+    flex-direction: column;
+  }
+  .left-hero {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px 12px;
+  }
+  .hero-title h1 {
+    text-align: center;
+  }
+  .hero-btns {
+    justify-content: center;
+  }
+  .heroProcess-btn {
+    margin-left: 20px;
+    width: 50%;
+  }
+  .right-hero{
+    width: 100%;
+    margin: 50px 0px 30px;
+  }
+  .heroFood-card{
+    height: 300px;
+  }
+  .heroFood-img{
+    height: 60%;
+    position: static;
+  }
+  .heroFood-img img{
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  .heroFood-card:last-child .heroFood-img img{
+    width: 100%;
+    position: static;
+  }
+  .heroFood-title{
+    height: 40%;
+  }
+  .arrow-img{
+    display: none;
+  }
+  /* hero ends here */
   /* information starts here */
-  .information{
+  .information {
     width: 60%;
     height: fit-content;
     flex-direction: column;
-}
-.information hr{
+  }
+  .information hr {
     height: 1px;
     width: 70%;
-}
-.info{
+  }
+  .info {
     width: 100%;
     padding: 18px 0px;
-}
-/* information ends here */
-/* products starts here */
-.product-box{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  gap: 22px;
-  padding: 0px 22px;
-}
-/* products ends here */
-/* service starts here */
-.service-box{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
-}
-/* service ends here */
-/* testimonials starts here */
-.testimonials-box{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  /* gap: 200px; */
-}
-.carousel{
-  height: 300px;
-}
-/* testimonials ends here */
-/* subscribe starts here */
-.subscription{
-  flex-direction: column;
-  padding: 2rem 1rem;
-  background-color: var(--background-color02);
-}
-.subscribe-box{
-  width: 100%;
-  height: fit-content;
-}
-.food-img img{
-  width: 300px;
-  height: fit-content;
-}
-/* subscribe ends here */
-/* footer starts here */
-.footer{
-  grid-template-columns: repeat(2,1fr);
-  gap: 40px;
-}
-/* footer ends here */
-}
-
-@media only screen and (992px > width >= 768px) {
-  .container {
-    max-width: 720px;
-    background-color: yellow;
   }
+  /* information ends here */
   /* products starts here */
-.product-box{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 22px;
-  /* padding: 0px 12px; */
-}
-/* products ends here */
+  .product-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    padding: 0px;
+  }
+  /* products ends here */
+  /* service starts here */
+  .service-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  /* service ends here */
+  /* testimonials starts here */
+  .testimonials-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 200px; */
+  }
+  .carousel {
+    height: 300px;
+  }
+  /* testimonials ends here */
   /* subscribe starts here */
-  .subscription{
-    padding: 1rem;
+  .subscription {
+    flex-direction: column;
+    padding: 2rem 1rem;
     background-color: var(--background-color02);
   }
-  .food-img img{
+  .subscribe-box {
+    width: 100%;
+    height: fit-content;
+  }
+  .food-img img {
     width: 300px;
     height: fit-content;
   }
   /* subscribe ends here */
   /* footer starts here */
-.footer{
-  grid-template-columns: repeat(3,1fr);
-  gap: 50px;
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  /* footer ends here */
 }
-/* footer ends here */
+@media only screen and (992px > width >= 768px) {
+  .container {
+    max-width: 720px;
+  }
+  /* hero starts here */
+  .delivery-box{
+    margin-bottom: 20px;
+  }
+  .hero-title h1{
+    font-size: 50px;
+  }
+  .order-btn{
+    padding: 12px 18px;
+    font-size: 20px;
+  }
+  .heroProcess-btn {
+    margin-left: 10px;
+    width: 58%;
+  }
+  .heroProcess-btn h4 {
+    font-size: 20px;
+  }
+  .right-hero{
+    width: 48%;
+  }
+  .heroFood-img img{
+    top: 0px;
+  }
+  .heroFood-card:last-child .heroFood-img img {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+  }
+  .arrow-img{
+    display: none;
+  }
+  /* hero ends here */
+  /* products starts here */
+  .product-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  /* products ends here */
+  /* subscribe starts here */
+  .subscription {
+    padding: 1rem;
+    background-color: var(--background-color02);
+  }
+  .food-img img {
+    width: 300px;
+    height: fit-content;
+  }
+  /* subscribe ends here */
+  /* footer starts here */
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  /* footer ends here */
 }
 @media only screen and (1200px > width >= 992px) {
   .container {
     max-width: 960px;
-    background-color: rgb(255, 0, 0);
   }
   /* subscribe starts here */
-  .subscription{
+  .subscription {
     padding: 1.4rem;
     background-color: var(--background-color02);
   }
-  .food-img img{
+  .food-img img {
     width: 260px;
     height: fit-content;
   }

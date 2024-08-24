@@ -19,23 +19,41 @@ addToCart.forEach((eachButton) => {
 // see more and less buttons functions
 const foodItem = [
   {
-    src: "./assets/images/",
-    foodId: "food-name",
-    price: "number",
-    foodReview: "rating",
+    src: "./assets/images/taco.png",
+    foodId: "Mexican Taco",
+    price: "12.05",
+    foodReview: "5.00"
   },
   {
-    src: "./assets/images/",
-    foodId: "food-name",
-    price: "number",
-    foodReview: "rating",
+    src: "./assets/images/beef-lasanga.png",
+    foodId: "Chicken Lasanga",
+    price: "20.00",
+    foodReview: "4.9"
   },
   {
-    src: "./assets/images/",
-    foodId: "food-name",
-    price: "number",
-    foodReview: "rating",
+    src: "./assets/images/shak.png",
+    foodId: "Salade Urf",
+    price: "33.99",
+    foodReview: "3.9"
   },
+  {
+    src: "./assets/images/shak.png",
+    foodId: "Super Salade",
+    price: "49.99",
+    foodReview: "4.9"
+  },
+  {
+    src: "./assets/images/beef-lasanga.png",
+    foodId: "Salmon Lasanga",
+    price: "79.99",
+    foodReview: "5.0"
+  },
+  {
+    src: "./assets/images/taco.png",
+    foodId: "Americano Taco",
+    price: "6.05",
+    foodReview: "5.00"
+  }
 ];
 
 const seeMoreBtn = document.getElementById("seemore-btn");
@@ -70,15 +88,14 @@ function loadMoreFood(lc) {
   }
   seeMoreBtn.style.display = "none";
   seelessBtn.style.display = "flex";
-
 }
-function removeLoadFood(){
-    const loadedFoods = document.querySelectorAll(".loaded-card");
-    for(let item of loadedFoods){
-        item.remove();
-    }
-    seeMoreBtn.style.display = "flex";
-    seelessBtn.style.display = "none";
+function removeLoadFood() {
+  const loadedFoods = document.querySelectorAll(".loaded-card");
+  for (let item of loadedFoods) {
+    item.remove();
+  }
+  seeMoreBtn.style.display = "flex";
+  seelessBtn.style.display = "none";
 }
 seelessBtn.addEventListener("click", removeLoadFood);
 seeMoreBtn.addEventListener("click", loadMoreFood);
@@ -89,15 +106,15 @@ const emailSubBtn = document.getElementById("subscribe-btn");
 function showMessage() {
   const emailId = document.querySelector("#subscribe-email");
   if (emailId.value === "") {
-    alert("Ops! Type your Email again.");
+    alert("Type your Email, please.");
   } else {
-    const subsBox = document.querySelector(".subscribe-box");
-    console.log(emailId.value);
-    const messageP = document.createElement("P");
-    messageP.className = "subscribed";
-    messageP.innerHTML = `Your ${emailId.value} subscribed successfully.`;
-    subsBox.appendChild(messageP);
-    emailId.value = "";
+      const subsBox = document.querySelector(".subscribe-box");
+      console.log(emailId.value);
+      const messageP = document.createElement("P");
+      messageP.className = "subscribed";
+      messageP.innerHTML = `Your ${emailId.value} subscribed successfully.`;
+      subsBox.appendChild(messageP);
+      emailId.value = "";
   }
 }
 
