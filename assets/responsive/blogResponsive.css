@@ -1,0 +1,109 @@
+/* responsive design starts here: */
+@media only screen and (width < 576px) {
+  .container {
+    max-width: 100%;
+    margin: 0px;
+  }
+  /* navbar starts here */
+  .navbar {
+    padding: 30px 0px;
+    height: max-content;
+    flex-direction: column;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .navbar ul {
+    margin-right: 0px;
+  }
+  .navbar ul li a {
+    margin: 10px 0px;
+    padding: 0px 18px;
+    font-size: 20px;
+  }
+  .search-box {
+    width: 80%;
+    height: 44px;
+    margin: 8px 0px 0px;
+  }
+  /* navbar ends here */
+  /* footer starts here */
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 2rem;
+    text-align: center;
+  }
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-email {
+    width: 230px;
+  }
+  /* footer ends here */
+}
+@media only screen and (768px > width >= 576px) {
+  .container {
+    max-width: 520px;
+  }
+  /* navbar starts here */
+  .navbar {
+    padding: 16px 0px;
+    height: max-content;
+    flex-direction: column;
+  }
+  .logo img {
+    width: 114px;
+    height: 64px;
+  }
+  .navbar ul {
+    margin-right: 0px;
+  }
+  .navbar ul li a {
+    margin: 10px 0px;
+    padding: 0px 18px;
+    font-size: 20px;
+  }
+  .search-box {
+    width: 80%;
+    height: 44px;
+    margin: 8px 0px 0px;
+  }
+  /* navbar ends here */
+  /* footer starts here */
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  /* footer ends here */
+}
+@media only screen and (992px > width >= 768px) {
+  .container {
+    max-width: 720px;
+  }
+  /* navbar starts here */
+  .navbar ul {
+    margin-right: 0px;
+  }
+  /* navbar ends here */
+  /* footer starts here */
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  /* footer ends here */
+}
+@media only screen and (1200px > width >= 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (width >= 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* responsive design ends here */

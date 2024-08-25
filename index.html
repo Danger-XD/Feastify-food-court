@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Feastify - Order & Eat</title>
-    <link rel="stylesheet" href="rootStyles.css" />
-    <link rel="stylesheet" href="navbar.css " />
-    <link rel="stylesheet" href="hero.css" />
-    <link rel="stylesheet" href="information.css" />
-    <link rel="stylesheet" href="products.css" />
-    <link rel="stylesheet" href="service.css" />
-    <link rel="stylesheet" href="testimonials.css" />
-    <link rel="stylesheet" href="subscription.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="./assets/styles/rootStyles.css" />
+    <link rel="stylesheet" href="./assets/styles/navbar.css " />
+    <link rel="stylesheet" href="./assets/styles/hero.css" />
+    <link rel="stylesheet" href="./assets/styles/information.css" />
+    <link rel="stylesheet" href="./assets/styles/products.css" />
+    <link rel="stylesheet" href="./assets/styles/service.css" />
+    <link rel="stylesheet" href="./assets/styles/testimonials.css" />
+    <link rel="stylesheet" href="./assets/styles/subscription.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="stylesheet" href="./assets/responsive/indexResponsive.css" />
     <link
       rel="shortcut icon"
       href="./assets/favicons/favicon-black.png"
       type="image/x-icon"
     />
   </head>
-  <body>
+  <body class="index-page">
     <header>
       <nav class="navbar container">
         <div class="logo">
@@ -32,7 +32,7 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="./foodCart.html">Cart</a></li>
-          <li><a href="#">Blogs</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
         </ul>
         <div class="search-box">
           <svg
@@ -102,7 +102,9 @@
           <div class="hero-btns">
             <button class="order-btn">Order Now</button>
             <div class="heroProcess-btn">
-              <button><img src="./assets/images/Polygon 1.png" alt=""></button>
+              <button>
+                <img src="./assets/images/Polygon 1.png" alt="" />
+              </button>
               <h4>Order Process</h4>
             </div>
           </div>
@@ -110,7 +112,7 @@
         <div class="right-hero">
           <div class="heroFood-card">
             <div class="heroFood-img">
-              <img src="./assets/images/burger_sandwich_PNG4135 2.png" alt="">
+              <img src="./assets/images/burger_sandwich_PNG4135 2.png" alt="" />
             </div>
             <div class="heroFood-title">
               <h4>Burger</h4>
@@ -120,7 +122,10 @@
           </div>
           <div class="heroFood-card">
             <div class="heroFood-img">
-              <img src="./assets/images/real-fast-food-meals-combo-meal-hd-transparent-png-735811696678116eun33goky6-removebg-preview.png" alt="">
+              <img
+                src="./assets/images/real-fast-food-meals-combo-meal-hd-transparent-png-735811696678116eun33goky6-removebg-preview.png"
+                alt=""
+              />
             </div>
             <div class="heroFood-title">
               <h4>Food Combo</h4>
@@ -130,7 +135,10 @@
           </div>
           <div class="heroFood-card">
             <div class="heroFood-img">
-              <img src="./assets/images/Chocolate-cake-with-chocolate-sprinkles-on-transparent-background-PNG-removebg-preview.png" alt="">
+              <img
+                src="./assets/images/Chocolate-cake-with-chocolate-sprinkles-on-transparent-background-PNG-removebg-preview.png"
+                alt=""
+              />
             </div>
             <div class="heroFood-title">
               <h4>Cakes</h4>
@@ -140,7 +148,7 @@
           </div>
           <div class="heroFood-card">
             <div class="heroFood-img">
-              <img src="./assets/images/pizza-png-28389.png" alt="">
+              <img src="./assets/images/pizza-png-28389.png" alt="" />
             </div>
             <div class="heroFood-title">
               <h4>Pizza</h4>
@@ -149,7 +157,7 @@
             </div>
           </div>
         </div>
-        <img src="./assets/images/Abstract.png" class="arrow-img" alt="">
+        <img src="./assets/images/Abstract.png" class="arrow-img" alt="" />
       </section>
 
       <section class="information container">
@@ -222,7 +230,7 @@
         </div>
       </section>
 
-      <section class="products container">
+      <section class="products container" id="products">
         <div class="title-box">
           <p>Product</p>
           <h3>Most Popular Items</h3>
@@ -230,7 +238,7 @@
         <div class="product-box" id="product-box">
           <div class="food-card">
             <div class="foodImg-box">
-              <img src="./assets/images/beef-lasanga.png" alt="" />
+              <img src="./assets/images/beef-lasanga.png" id="foodImg" alt="" />
             </div>
             <div class="food-description">
               <div class="food-name">
@@ -248,18 +256,18 @@
                       clip-rule="evenodd"
                     />
                   </svg>
-                  <p>4.9</p>
+                  <p id="foodRating">4.9</p>
                 </div>
               </div>
               <div class="food-cart">
                 <button id="addto-cart">Add to Cart</button>
-                <p>$12.5</p>
+                <p id="foodPrice">$12.5</p>
               </div>
             </div>
           </div>
           <div class="food-card">
             <div class="foodImg-box">
-              <img src="./assets/images/borboti.png" alt="" />
+              <img src="./assets/images/borboti.png" id="foodImg" alt="" />
             </div>
             <div class="food-description">
               <div class="food-name">
@@ -277,18 +285,18 @@
                       clip-rule="evenodd"
                     />
                   </svg>
-                  <p>4.7</p>
+                  <p id="foodRating">4.7</p>
                 </div>
               </div>
               <div class="food-cart">
                 <button id="addto-cart">Add to Cart</button>
-                <p>$15.19</p>
+                <p id="foodPrice">$15.19</p>
               </div>
             </div>
           </div>
           <div class="food-card">
             <div class="foodImg-box">
-              <img src="./assets/images/lasanga.png" alt="" />
+              <img src="./assets/images/lasanga.png" id="foodImg" alt="" />
             </div>
             <div class="food-description">
               <div class="food-name">
@@ -306,18 +314,18 @@
                       clip-rule="evenodd"
                     />
                   </svg>
-                  <p>5.0</p>
+                  <p id="foodRating">5.0</p>
                 </div>
               </div>
               <div class="food-cart">
                 <button id="addto-cart">Add to Cart</button>
-                <p>$21.99</p>
+                <p id="foodPrice">$21.99</p>
               </div>
             </div>
           </div>
           <div class="food-card">
             <div class="foodImg-box">
-              <img src="./assets/images/pizza.png" alt="" />
+              <img src="./assets/images/pizza.png" id="foodImg" alt="" />
             </div>
             <div class="food-description">
               <div class="food-name">
@@ -335,18 +343,18 @@
                       clip-rule="evenodd"
                     />
                   </svg>
-                  <p>4.8</p>
+                  <p id="foodRating">4.8</p>
                 </div>
               </div>
               <div class="food-cart">
                 <button id="addto-cart">Add to Cart</button>
-                <p>$13.99</p>
+                <p id="foodPrice">$13.99</p>
               </div>
             </div>
           </div>
           <div class="food-card">
             <div class="foodImg-box">
-              <img src="./assets/images/shak.png" alt="" />
+              <img src="./assets/images/shak.png" id="foodImg" alt="" />
             </div>
             <div class="food-description">
               <div class="food-name">
@@ -364,18 +372,18 @@
                       clip-rule="evenodd"
                     />
                   </svg>
-                  <p>4.9</p>
+                  <p id="foodRating">4.9</p>
                 </div>
               </div>
               <div class="food-cart">
                 <button id="addto-cart">Add to Cart</button>
-                <p>$30.12</p>
+                <p id="foodPrice">$30.12</p>
               </div>
             </div>
           </div>
           <div class="food-card">
             <div class="foodImg-box">
-              <img src="./assets/images/taco.png" alt="" />
+              <img src="./assets/images/taco.png" id="foodImg" alt="" />
             </div>
             <div class="food-description">
               <div class="food-name">
@@ -393,12 +401,12 @@
                       clip-rule="evenodd"
                     />
                   </svg>
-                  <p>4.5</p>
+                  <p id="foodRating">4.5</p>
                 </div>
               </div>
               <div class="food-cart">
                 <button id="addto-cart">Add to Cart</button>
-                <p>$9.99</p>
+                <p id="foodPrice">$9.99</p>
               </div>
             </div>
           </div>
@@ -637,6 +645,6 @@
         </div>
       </section>
     </footer>
-    <script src="script.js" defer></script>
+    <script src="indexScript.js"></script>
   </body>
 </html>

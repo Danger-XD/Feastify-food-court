@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 8px;
+    padding: 16px 0px;
   }
   .logo img {
     width: 94px;
@@ -13,6 +13,7 @@
   }
   .navbar ul {
     display: flex;
+    margin-right: -150px;
   }
   .navbar ul li {
     list-style: none;
@@ -20,7 +21,7 @@
   .navbar ul li a {
     text-decoration: none;
     display: inline-block;
-    padding: 0px 22px;
+    padding: 10px 22px;
     font-size: 18px;
     font-weight: 600;
     color: var(--background-color02);

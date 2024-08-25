@@ -7,12 +7,15 @@
   }
   /* navbar starts here */
   .navbar {
-    padding: 16px 0px;
+    padding: 30px 0px;
     height: max-content;
     flex-direction: column;
   }
   .logo img {
     width: 100px;
+  }
+  .navbar ul {
+    margin-right: 0px;
   }
   .navbar ul li a {
     margin: 10px 0px;
@@ -190,6 +193,7 @@
     width: 230px;
   }
   /* footer ends here */
+
 }
 @media only screen and (768px > width >= 576px) {
   .container {
@@ -204,6 +208,9 @@
   .logo img {
     width: 114px;
     height: 64px;
+  }
+  .navbar ul {
+    margin-right: 0px;
   }
   .navbar ul li a {
     margin: 10px 0px;
@@ -333,6 +340,11 @@
   .container {
     max-width: 720px;
   }
+  /* navbar starts here */
+  .navbar ul {
+    margin-right: 0px;
+  }
+  /* navbar ends here */
   /* hero starts here */
   .delivery-box{
     margin-bottom: 20px;
