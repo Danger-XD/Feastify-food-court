@@ -61,6 +61,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 22px;
+    padding: 2rem 0px;
 }
 .foodItem-card{
     width: calc(100% / 3) - 22px;
