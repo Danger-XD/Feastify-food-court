@@ -1,7 +1,8 @@
 # Feastify-food-court
 A responsive website with HTML, CSS and Js-DOM.
 
-### Live Deployed Website via Netlify [Feastify](https://feastify-food.netlify.app/)
+### Live Deployed Website via Netlify 
+- [Feastify](https://feastify-food.netlify.app/)
 
 ## Featurs:
 - Navigation buttons to navigate to different pages
