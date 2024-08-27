@@ -58,7 +58,7 @@ function displayCartItems() {
 }
 
 function removeCartItem(index) {
-    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || []; //this line keeps the array with element or null 
     cartItems.splice(index, 1);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
     displayCartItems(); // Refresh the cart display
